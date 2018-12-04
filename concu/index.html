@@ -70,10 +70,16 @@
  
   </head>
   <body>
-      <h1>  검색방법 </h1>
-        <li>  찾고싶은 고품질 검색 키워드를 검색하세요 </li>
-        <h1>  업로드 방법 </h1>
-        <li>  나만의 url 북마크링크를 공유해요! </li>
+     
+  <title>Upload Files</title>
+
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="files[]" multiple>
+    <input type="submit" value="Upload File" name="submit">
+</form>
+
+<script src="upload.js"></script>
+
     
 
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
