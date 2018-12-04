@@ -5,58 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-    <title>kisa 핀테크 1조</title>
+    <title>Bookie - 북마크 공유 플랫폼</title>
     <div class="jumbotron">
         <h1>Bookie</h1>
+        <ul class="nav navbar-nav navbar-right">
+          <button type="button" class="btn btn-default">회원가입</button>
+          <button type="button" class="btn btn-default">로그인</button></ul>
       </div>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">홈</a>
-          </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">인기태그 <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">마이태그</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">카테고리 <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">검색</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-                <button type="button" class="btn btn-default navbar-btn">로그인</button>
-           
-              
-                </ul>
-               
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
 
 
     <!-- 부트스트랩 -->
@@ -69,21 +24,29 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
  
   </head>
+  
   <body>
-     
-  <title>Upload Files</title>
+  
+    <div class="about">
+      <h3 class="text-center"><br><br>개인이 가지고 있는 알찬 인터넷 북마크 정보!<br/>
+      서로 공유하면 지식을 빨리 쉽게 배울 수 있습니다.</h3><br><br>
+    </div>
+  
+    <div class="search">					
+    <form class="navbar-form" role="search">
+    <div class="form-group">
+      <input type="search" class="form-control" placeholder="Search">
+      <button type="submit" class="btn btn-default">검색</button>
+    </div>
+    </form>
+    </div>
 
-  <button type="button">Click Me!</button>
-  <button type="button">Click Me!</button>
-  <form method="post" enctype="multipart/form-data">
-    <input type="file" name="files[]" multiple>
-    <input type="submit" value="Upload File" name="submit">
-</form>
-
-<script src="upload.js"></script>
-
-    
-
+  <br>
+    <div class="upload">				
+      <h3 class="text-center">북마크를 업로드하고 보상 받으세요!</h3>	<br><br>
+      <a href="upload.html" class="btn btn-default" role="button">업로드하기</a>
+    </div>
+    <br><br><br>
     <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
