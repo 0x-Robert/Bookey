@@ -25,7 +25,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
   </head>
 
   <body>
@@ -40,15 +40,34 @@
         </nav>
         <h3 class="text-muted"><a href="index.html">Bookie</a></h3>
       </div>
-      <div>		
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> 50코인 : 5000원<br>
-          <input type="radio" name="options" id="option2" autocomplete="off"> 100코인 : 10000원<br>
-          <input type="radio" name="chk_info" value="200"> 200코인 : 20000원<br>
-          <input type="radio" name="chk_info" value="300"> 300코인 : 30000원<br>
-          <input type="radio" name="chk_info" value="50"> 500코인 : 50000원     <br>   
-          <br><br>
-        <button type="submit" class="btn btn-default">충전하기</button>
-         </div>
+      <div>
+            태그 이름<br>
+            작성자 이름 / 업로드 날짜<br>
+            <hr/>
+            북마크 목록<br>
+            설명<br><br>
+            
+            <button type="submit" class="btn btn-default">다운로드</button><br>
+            <button type="submit" class="btn btn-default">좋아요</button>   
+            <button type="submit" class="btn btn-default">싫어요</button>
+            <hr/>
+        </div>
+
+        <div>
+            댓글 (2)<br><hr>
+            회원명 : 댓글1<br>
+            회원명 : 댓글2<br>
+        </div>
+
+
+        <div class="reply"><hr>
+                <form action="/write_reply" method="POST">
+                    <textarea name="reply" cols="80" rows="4">댓글 입력</textarea>
+                    <button type="submit" class="btn btn-default">등록</button>
+                    <!--  value="댓글을 입력해 주세요." onfocus="if (this.value=='댓글을 입력해 주세요.') this.value='';" onblur="if (this.value == '') {this.value = '댓글을 입력해 주세요.'}" -->
+                </form>
+        </div>
+
             <br><br><br>
       <footer class="footer">
         <p>&copy; Company 2014</p>

@@ -94,34 +94,22 @@
       <div class="header">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="signup.html" onClick="return show_hide_box(this,300,300,'2px dotted')">Sign up</a></li>
-            <li role="presentation"><a href="signin.html" onClick="return show_hide_box(this,300,300,'2px dotted')">Sign in</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a>회원명</a></li>
+            <li role="presentation"><a href='balance.html'>코인수</a></li> 
           </ul>
         </nav>
         <h3 class="text-muted"><a href="index.html">Bookie</a></h3>
       </div>
-
-        <h4 class="text-center"><br><br><br>개인이 가지고 있는 알찬 인터넷 북마크 정보,<br><br>
-            서로 공유하면 지식을 빨리 쉽게 배울 수 있습니다.<br><br><br><br></h4>
-
-            
-    <div class="jumbotron">
-        <p class="lead"><h4>지금 검색해보세요!</h4><br></p>
-        
-        <p><form class="navbar-form" role="search">
-            <div class="form-group">
-              <input type="search" class="form-control" placeholder="Search">
-              <button type="submit" class="btn btn-lg btn-success" onclick="location.href='search.html'">검색</button>
-            </div>
-        </form></p>
-    </div>
-
-    <div class="jumbotron">				
-            <h4>북마크를 업로드하고 보상 받으세요!</h4>	<br><br>
-            <a href="upload.html" class="btn btn-lg btn-success" role="button">업로드하기</a>
-    </div>
-
+      <div>		
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> 50코인 : 5000원<br>
+          <input type="radio" name="options" id="option2" autocomplete="off"> 100코인 : 10000원<br>
+          <input type="radio" name="chk_info" value="200"> 200코인 : 20000원<br>
+          <input type="radio" name="chk_info" value="300"> 300코인 : 30000원<br>
+          <input type="radio" name="chk_info" value="50"> 500코인 : 50000원     <br>   
+          <br><br>
+        <button type="submit" class="btn btn-default">충전하기</button>
+         </div>
+            <br><br><br>
       <footer class="footer">
         <p>&copy; Company 2014</p>
       </footer>
@@ -131,5 +119,7 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="upload.js"></script>
+
   </body>
 </html>
