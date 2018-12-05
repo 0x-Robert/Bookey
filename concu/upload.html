@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-  //<link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../../favicon.ico">
 
     <title>Bookie - 북마크 공유 플랫폼</title>
 
@@ -41,15 +41,16 @@
         <h3 class="text-muted"><a href="index.html">Bookie</a></h3>
       </div>
 
-        <h4 class="text-center"><br><br><br>업로드하기<br><br><br><br></h4>
-
-            
     <div class="jumbotron">
-        
-  <form method="post" enctype="multipart/form-data">
-    <input type="file" name="files[]" multiple>
-    <input type="submit" value="Upload File" name="submit">
-</form>
+
+        <div class="reply"><hr>
+            <form action="" method="POST">
+                설명 : <textarea name="reply" cols="50" rows="4"></textarea><br>
+                태그 입력 : <input type="text"><br><br><br>
+                <input type="file" name="files[]" multiple><br>
+                <button type="submit" class="btn btn-default">업로드</button>
+                    </form>
+        </div>
     </div>
 
       <footer class="footer">
