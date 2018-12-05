@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-  //<link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="../../favicon.ico">
 
     <title>Bookie - 북마크 공유 플랫폼</title>
 
@@ -30,22 +30,18 @@
     <SCRIPT LANGUAGE="JavaScript">
             //<!-- Begin
             function move_box(an, box) {
-              var cleft = 0;
-              var ctop = 0;
+              var cleft = 40;
+              var ctop = -20;
               var obj = an;
-              while (obj.offsetParent) {
-                cleft += obj.offsetLeft;
-                ctop += obj.offsetTop;
-                obj = obj.offsetParent;
-              }
-              box.style.left = cleft + 'px';
+              
+              box.style.left = cleft + '%';
               ctop += an.offsetHeight + 8;
               if (document.body.currentStyle &&
                 document.body.currentStyle['marginTop']) {
                 ctop += parseInt(
                   document.body.currentStyle['marginTop']);
               }
-              box.style.top = ctop + 'px';
+              box.style.top = ctop + '%';
             }
              
             function show_hide_box(an, width, height, borderStyle) {
@@ -94,9 +90,8 @@
       <div class="header">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="signup.html" onClick="return show_hide_box(this,300,300,'2px dotted')">Sign up</a></li>
-            <li role="presentation"><a href="signin.html" onClick="return show_hide_box(this,300,300,'2px dotted')">Sign in</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a href="signup.html" onClick="return show_hide_box(this,300,350,'2px dotted')">Sign up</a></li>
+            <li role="presentation"><a href="signin.html" onClick="return show_hide_box(this,300,250,'2px dotted')">Sign in</a></li>
           </ul>
         </nav>
         <h3 class="text-muted"><a href="index.html">Bookie</a></h3>
@@ -104,32 +99,33 @@
 
         <h4 class="text-center"><br><br><br>개인이 가지고 있는 알찬 인터넷 북마크 정보,<br><br>
             서로 공유하면 지식을 빨리 쉽게 배울 수 있습니다.<br><br><br><br></h4>
-
+            
             
     <div class="jumbotron">
-        <p class="lead"><h4>지금 검색해보세요!</h4><br></p>
-        
-        <p><form class="navbar-form" role="search">
-            <div class="form-group">
-              <input type="search" class="form-control" placeholder="Search">
-              <button type="submit" class="btn btn-lg btn-success" onclick="location.href='search.html'">검색</button>
-            </div>
-        </form></p>
-    </div>
-
-    <div class="jumbotron">				
-            <h4>북마크를 업로드하고 보상 받으세요!</h4>	<br><br>
-            <a href="upload.html" class="btn btn-lg btn-success" role="button">업로드하기</a>
-    </div>
-
-      <footer class="footer">
-        <p>&copy; Company 2014</p>
-      </footer>
-
-    </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+            <p class="lead"><h4>지금 검색해보세요!</h4><br></p>
+            
+            <p><form class="navbar-form" role="search">
+                <div class="form-group">
+                  <input type="search" class="form-control" placeholder="Search">
+                  <button type="button" class="btn btn-lg btn-success" onclick="location.href='search.html'">검색</button>
+                </div>
+            </form></p>
+        </div>
+    
+        <div class="jumbotron">				
+                <h4>북마크를 업로드하고 보상 받으세요!</h4>	<br><br>
+                <a href="upload.html" class="btn btn-lg btn-success" role="button">업로드하기</a>
+        </div>
+    
+          <footer class="footer">
+            <p>&copy; Company 2014</p>
+          </footer>
+    
+        </div> <!-- /container -->
+    
+    
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+      </body>
+    </html>
+    
